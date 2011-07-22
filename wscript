@@ -16,3 +16,4 @@ def build(bld):
   obj = bld.new_task_gen("cxx", "shlib", "node_addon")
   obj.target = "binding"
   obj.source = "./src/binding.cc"
+  obj.uselib = 'CRYPTO'
