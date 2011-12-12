@@ -1,4 +1,4 @@
-var binding = require('./build/default/binding');
+var binding = require('./build/Release/binding');
 
 Buffer.prototype.toHex = function() {
   return binding.bufToHex(this);
